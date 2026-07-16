@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Cart Quantity</title>
+  </head>
+  <body>
+    <div style="
+      display: flex;
+      flex-direction: row;
+      justify-content: center; 
+
+      font-size: 30px;
+      background-color: yellow;
+      border: 3px solid black;
+
+      ">
+          Operations with Cart
+      </div>
+
+    <div style="
+      display: flex;
+      flex-direction: row;
+      justify-content: center; 
+      
+      height: 60px;
+      margin-top: 50px;
+      ">
+      <button onclick="
+      console.log(`Cart Quantity: ${quantity}`);
+      " style="font-size: 20px;">Show Quantity</button>
+
+      <button onclick="
+      quantity += add;
+      console.log(`Cart Quantity: ${quantity}`);
+      " style="font-size: 20px;">Add to Cart</button>
+
+      <button onclick="
+      quantity += two;
+      console.log(`Cart Quantity: ${quantity}`);
+      " style="
+        font-size: 20px;">+2</button>
+
+      <button onclick="
+      quantity += three;
+      console.log(`Cart Quantity: ${quantity}`);
+      " style="font-size: 20px;">+3</button>
+
+      <button onclick="
+      quantity = reset;
+      console.log(`Cart Quantity: ${quantity}`);
+      " style="font-size: 20px;">Reset Cart</button>
+
+    </div>
+    <script>
+      let quantity = 0;
+      let add = 1;
+      let two = 2;
+      let three = 3;
+      let reset = 0;
+      
+    </script>
+  </body>
+
+</html>

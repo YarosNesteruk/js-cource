@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>variables</title>
+  
+  </head>
+  <body>
+    
+    <script>
+      var one = 1;
+      let two = 2;
+      console.log(one+two);
+    
+      var one = 3;
+      console.log(one+two);
+      /*
+      function example() {
+        if (true) {
+          var test = "Hello"; //var -  Not block-scoped
+        }
+        console.log(test); // Outputs: "Hello" (still accessible outside the IF block)
+      }
+      example();*/
+
+      /*
+      Feature         |       var       |      let           |       const       |
+      Sco             |Function / Global|     Block{ }       |       Block { }   |
+      Hoisting        | Yes(initialized | Yes(uninitialized, | Yes(uninitialized,|
+                      | as undefined)   |     throws error)  |  throws error)    |
+      Reassignable    |       Yes       |      Yes           |         No        |
+      Redeclarable    |       Yes       |      No            |         No        |
+      */
+    </script>
+  </body>
+
+</html>

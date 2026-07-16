@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Objects</title>
+    
+  <body>
+    
+    <script>
+      
+      /*
+      const product = {
+        name: 'trousers',
+        price: 50
+      };
+
+      console.log(product);
+      console.log(typeof product);
+      console.log(product.name);
+      console.log(product.price);
+
+      product.newProperty = true;
+      console.log(product);
+
+      delete product.newProperty;
+      console.log(product);   
+      
+      const product2 = {
+        name: 'blue shirt',
+        'delivery-time': '1 week',
+        rating: {
+          stars: 4.5,
+          count: 34
+        },
+
+        fun: function func2(){
+          console.log('func inside an object');
+        }
+      };
+
+      console.log(product2);
+      console.log(product2.name);
+      console.log(product2['name'])
+      console.log(product2['delivery-time']);
+
+      console.log(product2.rating.count)
+      product2.fun();
+
+      console.log(typeof console.log)
+
+      let jsTOjson = JSON.stringify(product2);
+      console.log(jsTOjson);
+
+      let jsonTOjs = JSON.parse(jsTOjson);
+      console.log(jsonTOjs);*/
+
+      console.log('hello'.length);
+      console.log('hello'.toUpperCase());
+      console.log([34,345,345,-3,0.2343].sort());
+      
+      const obj = {
+        message: 'gsdf'
+      }
+      const obj2 = obj;
+
+      obj.message = 'goooood';
+      console.log(obj);
+      console.log(obj2);
+
+
+      const obj3 = {
+        funct: function fun(){
+          console.log('simple func in obj')
+        },
+
+        func(){
+          console.log('simple func in obj3')
+        }
+      }
+
+      obj3.funct();
+      obj3.func();
+
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,38 @@
+
+.name{
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons button{
+  height: 50px;
+  margin: 20px 10px;
+}
+
+.buttons {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.link{
+  padding-right: 4px;
+  color: blue;
+  transition: color 0.15s;
+}
+
+.link:hover{
+  color: hotpink;
+}
+
+.link:active{
+  color:cornflowerblue;
+}
+
+
+
+.text{
+  display: flex;
+  justify-content: center;
+}

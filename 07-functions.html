@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Functions</title>
+    
+  <body>
+    
+    <script>
+      function func1() {
+        let vet = 23;
+        return console.log(vet);
+      }
+      
+      func1();
+
+
+      //parameters
+      function calcTax(product, tax = 0.1){
+          if(product === undefined){
+            alert('u didnt enter a cost');
+            return;
+          }
+
+          console.log(product  * tax);
+      }
+
+      calcTax(123);
+      calcTax(24354, 0.2);
+    </script>
+  </body>
+
+</html>

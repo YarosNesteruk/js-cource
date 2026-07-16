@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="name">Rock Paper Scissors</div>
+
+    <div class="buttons">
+
+        <button onclick="
+        play('Rock');
+        ">Rock</button>
+
+        <button onclick="
+          play('Paper');
+        ">Paper</button>
+
+        <button onclick="
+        play('Scissors');
+        ">Scissors</button>
+
+    </div>
+
+    <div class="text"> 
+      <a class="link" href="https://supersimple.dev/projects/amazon/orders.html">
+        Click here 
+      </a>
+      to see final version of the project
+    </div>
+
+    <script>
+
+      function play(playerMove){
+        let result = '';
+        const computerMove = computeRandMove();
+        
+        console.log(`Your move: ${playerMove}`);
+        console.log(`Computer move: ${computerMove}`);
+
+        switch(playerMove){
+          case 'Rock':
+                if(computerMove === 'scissors'){
+                  result = ' You Won!';
+                } else if(computerMove === 'paper') {
+                  result = ` You Lost:(`;
+                }else{
+                  result = ' It is a Tie 😲'
+                }
+              break;
+          case 'Scissors':
+              if(computerMove === 'scissors'){
+                result = 'It is a Tie 😲';
+              } else if(computerMove === 'paper') {
+                result = ' You Won!';
+              }else{
+                result = `You Lost:(`;
+              }
+              break;
+          case 'Paper': 
+              if(computerMove === 'scissors'){
+                result = ` You Lost:(`;
+              } else if(computerMove === 'paper') {
+                result = ' It is a Tie 😲';
+              }else{
+                result = ' You Won!';
+              }
+              break;
+          default: 
+            alert('SYSTEM CRASHED');
+        }
+
+        alert(`You picked: ${playerMove}\nComputer: ${computerMove}\nResult: ${result} `);
+      }
+
+      function computeRandMove(){
+        const randNum = Math.random() ;
+        let computerMove = '';
+
+        if(randNum >= 0 && randNum < 1/3){
+            computerMove = 'rock';
+        }else if(randNum >= 1/3 && randNum < 2/3){
+            computerMove = 'paper';
+        }else if(randNum >= 2/3 && randNum < 1){
+            computerMove = 'scissors';
+        }
+
+        return computerMove;
+      }
+      
+    </script>
+  </body>
+
+</html>

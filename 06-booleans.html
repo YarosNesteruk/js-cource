@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Booleans</title>
+  
+  </head>
+  <body>
+    
+    <script>
+      console.log(3 > 5 - 5);
+      console.log(5 === "5.00");
+
+      const age = 15;
+
+      if(age >= 16){
+        console.log('You can drive');
+
+      }else if(age > 14){
+        console.log('Almost there');
+      }
+      else{
+        console.log('you cant drive');
+      }
+
+
+      //ternary operator
+      let res = 0 ? 'true' : 'false';
+      alert(res);
+
+      false && console.log('hello');
+
+      const rest = 5 && 'hello';
+      console.log(rest);
+
+      //default operator
+      const cur = undefined || 'USD';
+      console.log(cur);
+    </script>
+  </body>
+
+</html>

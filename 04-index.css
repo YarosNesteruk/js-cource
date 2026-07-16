@@ -1,0 +1,22 @@
+.p{
+  font-family: Tahoma, sans-serif;
+  font-size: 40px;
+}
+
+.button-hello{
+  color: white;
+  background-color: lightcoral;
+
+  width: 400px;
+  border: none;
+
+  transition: background-color 0.15s;
+}
+
+.button-hello:hover{
+  background-color: brown;
+}
+
+.button-hello:active{
+  background-color: rgb(131, 184, 39);
+}
