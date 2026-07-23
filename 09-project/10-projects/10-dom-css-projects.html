@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--DOM - document object model-->
+<html>
+  <head>
+    <title>DOM-Projects</title>
+    <link rel="stylesheet" href="10-dom-with-css.css">
+  </head>
+
+  <body>
+    <div class ="div">
+      <p>YouTube Subscribe Button</p>
+      <button class="subs" onclick="subscribe();
+      ">Subscribe</button>
+    </div>
+
+    <div class ="div">
+      <p>Amazon Shipping Calculator</p>
+      <p>Orders under $40=+$10 shipping</p>
+      <p>Orders over $40 = FREE shipping</p>
+      <input placeholder="Cost of order" 
+      class="js-cost" onkeydown="
+      enterEventListener(event);
+      ">
+      <button class="calc-button" onclick="
+      calcTotal();
+      ">Calculate</button>
+      <p class="js-total"></p>
+    </div>
+
+    <div class ="div">
+      <p>Rock Paper Scissors</p>
+      <a class="link" href="10-rock-paper-scissors.html" target="_blank">Click here</a>
+    </div>
+    
+    <script>
+      function subscribe(){
+        const subs_button = document.querySelector('.subs');
+  
+
+        if(subs_button.innerHTML === 'Subscribe'){
+          subs_button.innerHTML = 'Subscribed';
+          subs_button.classList.add('is-subscribed-js');
+        } else if(subs_button.innerHTML === 'Subscribed'){
+          subs_button.innerHTML = 'Subscribe';
+          subs_button.classList.remove('is-subscribed-js');
+        }
+      }
+
+      function calcTotal(){
+        const cost = document.querySelector('.js-cost');
+        let total = Number(cost.value);
+        console.log(`${total}`);
+        if(total < 40 && total > 0){
+            document.querySelector('.js-total').innerHTML = `$${total + 10}`;
+        } else if(total >= 40){
+          document.querySelector('.js-total').innerHTML = `$${total}`;
+        } else if (total === 0){
+          document.querySelector('.js-total').innerHTML = `You didn't entered the cost`;
+        }
+      }
+
+      function enterEventListener(event){
+        if(event.key === 'Enter'){
+          calcTotal();
+        }
+      }
+     
+    </script>
+  </body>
+
+</html>

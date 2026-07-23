@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--DOM - document object model-->
+<html>
+  <head>
+    <title>DOM</title>
+    
+  <body>
+    
+    <button>Hello</button>
+
+    <button class="second">second</button>
+    <script>
+      /*console.log(document.title);
+      console.log(document.body);
+      console.log(typeof document.body);
+      console.log(document.body.innerHTML);
+
+      document.body.innerHTML = '<button> HIiiiii </button>';
+      console.log(document.body.innerHTML);
+      
+      document.body.innerHTML = 'good job';
+      document.title = 'hello';*/
+
+      console.log(document.querySelector('button'));
+      console.log(document.querySelector('button')
+        .innerHTML = 'changed');
+
+
+      const sec = document.querySelector('.second');
+      console.log(sec);
+
+    </script>
+  </body>
+
+</html>

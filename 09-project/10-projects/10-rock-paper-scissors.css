@@ -1,0 +1,94 @@
+body{
+  background-color: rgb(25,25,25);
+}
+
+p{
+  color: white;
+  font-size: 20px;
+  font-family: Arial;
+}
+
+
+.name{
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100px;
+  color: white;
+ font-weight: bold; 
+}
+
+.play button{
+  padding: 30px 30px 30px 30px;
+  margin: 100px 30px 0 30px;
+  border: 3px solid white;
+  border-radius: 70px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.reset button{
+  height: 50px;
+  width: 150px;
+  margin: 20px 10px;
+  cursor: pointer;
+
+  border: none;
+  background-color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.play,
+.reset {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.move-icon{
+  height: 70px;
+}
+
+.link{
+  padding-right: 4px;
+  color: blue;
+  transition: color 0.15s;
+}
+
+.link:hover{
+  color: hotpink;
+}
+
+.link:active{
+  color:cornflowerblue;
+}
+
+.text,
+.js-score,
+.js-result{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.js-score,
+.js-result{
+  margin-top: 100px;
+}
+
+.js-moves{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.div{
+  margin-bottom: 70px;
+}
