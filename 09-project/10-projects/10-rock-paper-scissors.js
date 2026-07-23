@@ -36,6 +36,7 @@
       }
 
       function paper(computerMove){
+
         let result = '';
         if(computerMove === 'scissors'){
             result = `You Lost:(`;
@@ -48,6 +49,7 @@
       }
 
       function scissors(computerMove){
+
         let result = '';
         if(computerMove === 'scissors'){
             result = 'Tie. 😲';
@@ -60,6 +62,7 @@
       }
 
       function rock(computerMove){
+
         let result = '';
         if(computerMove === 'scissors'){
           result = 'You Won!';
@@ -72,6 +75,7 @@
       }
 
       function computeRandMove(){
+
         const randNum = Math.random() ;
         let computerMove = '';
 
@@ -87,6 +91,7 @@
       }
 
       function setScore(result){
+        
           if(result === 'You Won!'){
               score.wins += 1;
           }else if(result === 'You Lost:('){
@@ -108,9 +113,9 @@
         document.querySelector('.js-moves').innerHTML
           = `You
           <img class="move-icon" 
-          src="${playerMove}-emoji.png">
+          src="${playerMove}_emoji.png">
           <img class="move-icon" 
-          src="${computerMove}-emoji.png">
+          src="${computerMove}_emoji.png">
           Computer`;
       }
 
